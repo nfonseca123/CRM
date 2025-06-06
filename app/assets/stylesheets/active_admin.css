@@ -1,0 +1,83 @@
+/* ActiveAdmin Basic Styles */
+.active_admin {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #e3e3e3;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styling */
+.index_table {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.index_table th, .index_table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.index_table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.admin-image {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+#tabs {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+ #tabs li {
+  padding: 10px;
+  list-style: none;
+ }
