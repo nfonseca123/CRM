@@ -8,6 +8,4 @@ class Customer < ApplicationRecord
   def self.ransackable_associations(auth_object = nil)
     ["image_attachment", "image_blob"]
   end
-
-
 end
