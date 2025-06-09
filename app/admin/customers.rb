@@ -21,9 +21,11 @@ ActiveAdmin.register Customer do
       row :notes
       row :image do |customer|
         if customer.image.attached?
-          image_tag customer.image, class: "admin-image"
+          image_tag url_for(customer.image), class: "admin-image"
+        else
+          "No image available"
         end
-      end
-    end
-  end
-end
+      end  # Closing `end` for the `if` condition
+    end  # Closing `end` for `attributes_table`
+  end  # Closing `end` for `show`
+end  # Closing `end` for `ActiveAdmin.register`

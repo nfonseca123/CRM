@@ -1,10 +1,4 @@
 <h1>Customer List</h1>
-
-<% @customers.each do |customer| %>
-  <div class="customer-details">
-    <h2>Customer Details</h2>
-    <p><strong>Name:</strong> <%= customer.full_name %></p>
-    <p><strong>Email:</strong> <%= customer.email_address%></p>
-    <p><strong>Phone:</strong> <%= customer.phone_number %></p>
-  </div>
-<% end %>
+<div id="customer_list">
+  <%= render @customers %>
+</div>
