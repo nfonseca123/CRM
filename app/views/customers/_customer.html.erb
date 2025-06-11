@@ -1,9 +1,19 @@
 
 <div class="customer_details">
-  <% if customer.image.attached? %>
-    <%= image_tag url_for(customer.image), alt: "#{customer.full_name}'s image", class: "customer_image" %>
-  <% end %>
-  <p><strong>Name:</strong> <%= customer.full_name %></p>
-  <p><strong>Email:</strong> <%= customer.email_address %></p>
-  <p><strong>Phone:</strong> <%= customer.phone_number %></p>
+  <div class="customer_image_container">
+    <% if customer.image.attached? %>
+      <%= image_tag url_for(customer.image), alt: "#{customer.full_name}'s image", class: "customer_image" %>
+    <% else %>
+      <%= image_tag "default_customer_image.png", alt: "Default customer image", class: "customer_image" %>
+    <% end %>
+  </div>
+  <div class="customer_contact_info">
+    <p><%= customer.full_name %></p>
+    <% if customer.email_address?%>
+      <p><%= customer.email_address %></p>
+    <% else %>
+      <p class="no_email">N/A</p>
+    <% end %>
+    <p> <%= customer.phone_number %></p>
+  </div>
 </div>

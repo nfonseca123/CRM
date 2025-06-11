@@ -1,22 +1,39 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+
 div#customer_list {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 div.customer_details {
-  background-color: #e4e7ea;
   display: flex;
   padding: 10px;
+  margin: 15px;
   justify-content: center;
   flex-direction: column;
-  border: rgb(146, 146, 146) 1px solid;
+  border: rgb(225, 225, 225) 1px solid;
+  border-radius: 5px;
 }
+
+div.customer_image_container{
+  align-self: center;
+  flex: 1;
+}
+
 
 img.customer_image {
   max-height: 200px;
   max-width: 150px;
   border-radius: 5px;
+}
+
+div.customer_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
